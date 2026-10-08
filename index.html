@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pixel & code </title>
+<meta name="description" content="Portafolio de Alex Rivera: desarrollo front-end, diseño de interfaces y animación web.">
+<script src="js/theme-init.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav-wrap">
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a class="brand" href="#inicio" aria-label="Alex Rivera, ir al inicio">P&C</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema" aria-pressed="false">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+<!-- ================= INICIO ================= -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="status"><span class="dot"></span>Disponible para nuevos proyectos</p>
+      <h1 class="name" aria-label="Alex Rivera"><span class="name-inner">Pixel & code</span></h1>
+      <p class="role">Hago <span class="typed" id="typed">sitios web veloces</span><span class="caret" aria-hidden="true"></span>.</p>
+      <p class="intro">Diseño y programo interfaces claras, rápidas y con detalles que dan gusto usar. Llevo las ideas desde el boceto hasta un producto publicado.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#proyectos" data-magnetic>
+          Ver proyectos
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#contacto" data-magnetic>Escríbeme</a>
+      </div>
+      <div class="social" aria-label="Redes sociales">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.54h.06c.53-1 1.82-2.04 3.75-2.04 4.01 0 4.75 2.64 4.75 6.07V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75Z"/></svg></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a>
+        <a href="#contacto" aria-label="Correo electrónico"><svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="portrait">
+        <!-- Tu foto en círculo -->
+        <img src="img/img.png" alt="Alex Rivera - Desarrollador Front-end" class="my-photo">
+        
+        <!-- Ilustración SVG original (se oculta con CSS) -->
+        <svg viewBox="0 0 480 500" role="img" aria-label="Ilustración de una persona con gafas trabajando en una laptop">
+          <defs>
+            <linearGradient id="gBlob" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" style="stop-color:var(--violet)"/>
+              <stop offset="1" style="stop-color:var(--coral)"/>
+            </linearGradient>
+          </defs>
+          <path class="blob-shape" d="M240 22C342 8 446 82 454 192C462 304 410 404 308 452C206 500 78 470 38 358C-2 246 40 118 122 60C160 32 200 24 240 22Z" fill="url(#gBlob)"/>
+          <circle class="sun-shape" cx="376" cy="100" r="46" fill="#FFC93C"/>
+          <circle cx="86" cy="150" r="14" fill="#fff" opacity=".35"/>
+          <circle cx="60" cy="196" r="7" fill="#fff" opacity=".5"/>
+          <!-- cuerpo -->
+          <path d="M84 500C84 408 158 362 240 362C322 362 396 408 396 500Z" fill="#25C9A0"/>
+          <path d="M196 372Q240 418 284 372" fill="none" stroke="#1B9E7E" stroke-width="7" stroke-linecap="round"/>
+          <path d="M214 396v34M266 396v34" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          <!-- cabeza -->
+          <g class="head">
+            <rect x="218" y="318" width="44" height="64" rx="18" fill="#C98A63"/>
+            <circle cx="170" cy="272" r="13" fill="#E0A47C"/>
+            <circle cx="310" cy="272" r="13" fill="#E0A47C"/>
+            <ellipse cx="240" cy="268" rx="72" ry="82" fill="#E0A47C"/>
+            <circle cx="250" cy="150" r="34" fill="#1A1740"/>
+            <path d="M166 262C156 188 200 148 248 150C302 152 324 200 314 262C304 232 286 214 256 208C226 214 196 222 166 262Z" fill="#1A1740"/>
+            <circle cx="201" cy="302" r="9" fill="#FF8FA8" opacity=".55"/>
+            <circle cx="279" cy="302" r="9" fill="#FF8FA8" opacity=".55"/>
+            <ellipse class="eye" cx="212" cy="272" rx="6" ry="8" fill="#1A1740"/>
+            <ellipse class="eye" cx="268" cy="272" rx="6" ry="8" fill="#1A1740"/>
+            <g fill="rgba(255,255,255,.18)" stroke="#fff" stroke-width="4">
+              <rect x="190" y="252" width="44" height="38" rx="15"/>
+              <rect x="246" y="252" width="44" height="38" rx="15"/>
+            </g>
+            <path d="M234 268Q240 262 246 268" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+            <path d="M196 240Q212 232 228 240M252 240Q268 232 284 240" fill="none" stroke="#1A1740" stroke-width="4" stroke-linecap="round"/>
+            <path d="M222 312Q240 330 258 312" fill="none" stroke="#1A1740" stroke-width="4.5" stroke-linecap="round"/>
+          </g>
+          <!-- laptop -->
+          <rect x="128" y="414" width="224" height="96" rx="12" fill="#2B2660"/>
+          <rect x="138" y="424" width="204" height="8" rx="4" fill="#3A3480"/>
+          <circle cx="240" cy="466" r="12" fill="#FFC93C"/>
+          <g class="hand-l"><ellipse cx="176" cy="416" rx="26" ry="15" fill="#E0A47C"/></g>
+          <g class="hand-r"><ellipse cx="304" cy="416" rx="26" ry="15" fill="#E0A47C"/></g>
+        </svg>
+      </div>
+      <div class="chip" style="--x:2%;--y:16%;--depth:26;--fd:0s;--c:var(--violet);--en:1.0s"><span><i></i>&lt;/&gt; HTML y CSS</span></div>
+      <div class="chip" style="--x:66%;--y:46%;--depth:-30;--fd:-1.6s;--c:var(--coral);--en:1.15s"><span><i></i>Figma</span></div>
+      <div class="chip" style="--x:-2%;--y:66%;--depth:34;--fd:-3s;--c:var(--mint);--en:1.3s"><span><i></i>Animación</span></div>
+      <div class="chip" style="--x:60%;--y:90%;--depth:-22;--fd:-2.2s;--c:var(--sun);--en:1.45s"><span><i></i>Accesibilidad</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE MÍ ================= -->
+<section class="section" id="sobre-mi">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <h2>Sobre mí</h2>
+      <p class="lead">Me dedico a que lo complejo se sienta simple.</p>
+      <p>Diseño y programo productos web desde hace más de seis años. Empiezo escuchando el problema, dibujo la solución en papel y la llevo a código limpio, accesible y rápido.</p>
+      <p>Me muevo con soltura entre el diseño y el desarrollo. Eso me permite cuidar los detalles que suelen perderse entre un equipo y otro, como el ritmo de una animación o el espacio entre dos botones.</p>
+      <dl class="facts">
+        <div><dt>Idiomas</dt><dd>Español nativo, inglés avanzado</dd></div>
+        <div><dt>Intereses</dt><dd>Ilustración, café de especialidad y senderismo</dd></div>
+        <div><dt>Ahora</dt><dd>Aprendiendo shaders y gráficos 3D para la web</dd></div>
+      </dl>
+    </div>
+    <div class="about-side">
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="58" style="fill:var(--surface);stroke:var(--line)"/>
+          <g class="spin">
+            <defs><path id="circ" d="M60 60m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs>
+            <text font-size="11.5" font-weight="700" letter-spacing="1.5" style="fill:var(--ink);font-family:var(--font-body)">
+              <textPath href="#circ" textLength="262" lengthAdjust="spacing">Disponible • Freelance • Equipos • </textPath>
+            </text>
+          </g>
+          <circle cx="60" cy="60" r="20" fill="#FF5C88"/>
+          <path d="M60 46l4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="stat reveal" data-count="6" style="--d:.05s"><b><i style="font-style:normal" data-num>0</i>+</b><span>años creando productos web</span></div>
+      <div class="stat reveal" data-count="40" style="--d:.15s"><b><i style="font-style:normal" data-num>0</i>+</b><span>proyectos publicados</span></div>
+      <div class="stat reveal" data-count="15" style="--d:.25s"><b><i style="font-style:normal" data-num>0</i></b><span>marcas y equipos acompañados</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HABILIDADES ================= -->
+<section class="section section--tint" id="habilidades">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Habilidades</h2>
+      <p class="lead">Lo que mejor sé hacer y las herramientas con las que lo hago.</p>
+    </div>
+    <div class="rings">
+      <div class="ring reveal" data-value="92" style="--c:var(--violet);--d:0s">
+        <div class="ring-box"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="track" cx="60" cy="60" r="52"/><circle class="meter" cx="60" cy="60" r="52"/></svg><div class="ring-num"><span><b>0</b>%</span></div></div>
+        <h3>Desarrollo front-end</h3><p>HTML, CSS, JavaScript y React</p>
+      </div>
+      <div class="ring reveal" data-value="88" style="--c:var(--coral);--d:.1s">
+        <div class="ring-box"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="track" cx="60" cy="60" r="52"/><circle class="meter" cx="60" cy="60" r="52"/></svg><div class="ring-num"><span><b>0</b>%</span></div></div>
+        <h3>Diseño de interfaces</h3><p>Prototipos, sistemas de diseño y UX</p>
+      </div>
+      <div class="ring reveal" data-value="85" style="--c:var(--mint);--d:.2s">
+        <div class="ring-box"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="track" cx="60" cy="60" r="52"/><circle class="meter" cx="60" cy="60" r="52"/></svg><div class="ring-num"><span><b>0</b>%</span></div></div>
+        <h3>Animación web</h3><p>Microinteracciones y movimiento con sentido</p>
+      </div>
+      <div class="ring reveal" data-value="80" style="--c:var(--sun);--d:.3s">
+        <div class="ring-box"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="track" cx="60" cy="60" r="52"/><circle class="meter" cx="60" cy="60" r="52"/></svg><div class="ring-num"><span><b>0</b>%</span></div></div>
+        <h3>Accesibilidad</h3><p>Sitios que cualquier persona puede usar</p>
+      </div>
+    </div>
+    <div class="marquee" aria-label="Herramientas que utilizo">
+      <div class="marquee-track">
+        <span class="tool" style="--c:var(--violet)"><i></i>HTML5</span><span class="tool" style="--c:var(--coral)"><i></i>CSS3</span><span class="tool" style="--c:var(--sun)"><i></i>JavaScript</span><span class="tool" style="--c:var(--mint)"><i></i>TypeScript</span><span class="tool" style="--c:var(--violet)"><i></i>React</span><span class="tool" style="--c:var(--coral)"><i></i>Next.js</span><span class="tool" style="--c:var(--sun)"><i></i>Node.js</span><span class="tool" style="--c:var(--mint)"><i></i>Tailwind</span>
+      </div>
+      <div class="marquee-track rev">
+        <span class="tool" style="--c:var(--coral)"><i></i>Figma</span><span class="tool" style="--c:var(--mint)"><i></i>Git y GitHub</span><span class="tool" style="--c:var(--violet)"><i></i>GSAP</span><span class="tool" style="--c:var(--sun)"><i></i>Storybook</span><span class="tool" style="--c:var(--coral)"><i></i>Pruebas con Playwright</span><span class="tool" style="--c:var(--mint)"><i></i>Rendimiento web</span><span class="tool" style="--c:var(--violet)"><i></i>SEO técnico</span><span class="tool" style="--c:var(--sun)"><i></i>WCAG</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROYECTOS ================= -->
+<section class="section" id="proyectos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Proyectos</h2>
+      <p class="lead">Una selección de trabajos recientes. Toca cualquiera para ver los detalles.</p>
+    </div>
+    <div class="filters reveal" role="group" aria-label="Filtrar proyectos">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">Todos</button>
+      <button class="filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+      <button class="filter" type="button" data-filter="app" aria-pressed="false">Apps</button>
+      <button class="filter" type="button" data-filter="diseno" aria-pressed="false">Diseño</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCIA ================= -->
+<section class="section section--tint" id="experiencia">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Experiencia</h2>
+      <p class="lead">Dónde he trabajado y qué aprendí en cada etapa.</p>
+    </div>
+    <ol class="timeline" id="timeline">
+      <li class="tl-item reveal" style="--c:var(--violet)">
+        <time class="tl-date">2024 a hoy</time><span class="tl-node"></span>
+        <div class="tl-card">
+          <h3>Front-end sénior</h3><p class="tl-org">Estudio Lumen</p>
+          <p class="tl-text">Lidero la interfaz de productos digitales para clientes de finanzas y educación.</p>
+          <ul><li>Reduje el tiempo de carga de la app principal en un 45 %.</li><li>Creé un sistema de diseño que hoy usan seis equipos.</li></ul>
+        </div>
+      </li>
+      <li class="tl-item reveal" style="--c:var(--coral)">
+        <time class="tl-date">2021 a 2024</time><span class="tl-node"></span>
+        <div class="tl-card">
+          <h3>Diseño y desarrollo de interfaces</h3><p class="tl-org">Agencia Brisa</p>
+          <p class="tl-text">Pasé del prototipo al código en campañas, tiendas en línea y sitios de marca.</p>
+          <ul><li>Entregué más de 25 sitios con puntajes altos en rendimiento y accesibilidad.</li><li>Mentoría a dos personas que empezaban en el área.</li></ul>
+        </div>
+      </li>
+      <li class="tl-item reveal" style="--c:var(--sun)">
+        <time class="tl-date">2019 a 2021</time><span class="tl-node"></span>
+        <div class="tl-card">
+          <h3>Diseñador y desarrollador freelance</h3><p class="tl-org">Proyectos independientes</p>
+          <p class="tl-text">Trabajé con emprendimientos y pequeños negocios que necesitaban una presencia web propia.</p>
+          <ul><li>Construí mi método de trabajo: descubrir, prototipar, probar y publicar.</li></ul>
+        </div>
+      </li>
+      <li class="tl-item reveal" style="--c:var(--mint)">
+        <time class="tl-date">2015 a 2019</time><span class="tl-node"></span>
+        <div class="tl-card">
+          <h3>Ingeniería de sistemas</h3><p class="tl-org">Formación universitaria</p>
+          <p class="tl-text">Base en programación y bases de datos, con cursos complementarios de diseño visual y UX.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="section band" id="contacto">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <h2>Hablemos</h2>
+      <p class="lead">¿Tienes un proyecto, una idea o solo ganas de conversar? Escríbeme y te respondo en menos de 48 horas.</p>
+      <div class="mail-row">
+        <a id="emailText" href="mailto:hola@alexrivera.dev">pixe&code@gmail.com</a>
+        <button class="copy-btn" id="copyBtn" type="button">Copiar correo</button>
+      </div>
+      <div class="social" aria-label="Redes sociales">
+        <a href="https://github.com/tienyuthmartinez" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61558501832787" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/tienyuth.martinez/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a>
+      </div>
+    </div>
+
+    <form id="form" class="reveal" novalidate style="--d:.12s">
+      <div class="field">
+        <label for="f-name">Nombre</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Cómo te llamas" aria-describedby="f-name-err">
+        <p class="err" id="f-name-err" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="f-email">Correo</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" placeholder="nombre@dominio.com" aria-describedby="f-email-err">
+        <p class="err" id="f-email-err" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="f-message">Mensaje</label>
+        <textarea id="f-message" name="message" placeholder="Cuéntame en qué te puedo ayudar" aria-describedby="f-message-err"></textarea>
+        <p class="err" id="f-message-err" role="alert"></p>
+      </div>
+      <button class="btn btn-primary" type="submit" id="sendBtn" data-magnetic>
+        <span id="sendLabel">Enviar mensaje</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-4 16-4-6-8-2Z"/></svg>
+      </button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="band">
+  <div class="wrap foot">
+    <p>© <span id="year">2026</span> Desarrollado por Tienyuth Martinez.</p>
+    <a href="#inicio">Volver arriba</a>
+  </div>
+</footer>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="mClose" type="button" aria-label="Cerrar detalles"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="modal-art" id="mArt"></div>
+    <div class="modal-body">
+      <span class="pill" id="mCat"></span>
+      <h3 id="mTitle"></h3>
+      <p class="m-desc" id="mDesc"></p>
+      <dl class="facts" id="mFacts"></dl>
+      <ul class="tags" id="mTags"></ul>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
